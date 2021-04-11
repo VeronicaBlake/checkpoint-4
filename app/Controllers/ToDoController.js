@@ -4,7 +4,7 @@ import { todoService } from "../Services/ToDoService.js";
 
 //Private
 function _drawTodo() {
-    document.getElementById('todoList').innerHTML = template
+    document.getElementById('todoList').innerHTML = ProxyState.todo.Template
 }
 
 
@@ -12,14 +12,20 @@ function _drawTodo() {
 export default class ToDoController {
     constructor() {
         ProxyState.on('todo', _drawTodo);
-        this.addTodo()
-      }
-    
-      addTodo() {
-        try {
-         todoService.addTodo()
-        }catch (error) {
-          console.error(error)
-        }
-      }
+        this.getTodo()
     }
+    
+    async getTodo() {
+        try{
+          window.event.preventDefault() 
+          const form = window.event.target
+          let newTodo = {
+            description: form.description.value
+        }
+        await todoService.addTodo(newTodo)
+        form.reset()
+    }   catch (error){
+        console.error(error)
+        }
+    }
+}

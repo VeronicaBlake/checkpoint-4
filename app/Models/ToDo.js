@@ -1,11 +1,9 @@
-import { generateId } from "../Utils/GenerateId.js"
-
 export default class ToDo {
-    constructor({description, id = generateId(), user, completed}) {
+    constructor({description, id=null, user=null, completed=null}) {
         this.description = description 
         this.id = id
         this.user = user
-        this.checked = completed
+        this.completed = completed
     }
     get Template(){
         return/**html**/ ` 
