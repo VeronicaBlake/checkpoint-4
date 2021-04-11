@@ -2,12 +2,13 @@ import { ProxyState } from "../AppState.js";
 import { quotesService } from "../Services/QuotesService.js";
 
 function _draw() {
-    document.getElementById('quote').innerHTML = ProxyState.quote.Template
+    document.getElementById('quote').innerHTML = ProxyState.quotes.Template
 }
 
 export default class QuotesController {
   constructor() {
-    ProxyState.on('quote', _draw);
+    ProxyState.on('quotes', _draw);
+    this.getQuote
   }
 
   async getQuote() {
