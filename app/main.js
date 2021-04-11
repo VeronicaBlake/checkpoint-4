@@ -1,9 +1,9 @@
+import QuotesController from "./Controllers/QuotesController.js";
 import TasksController from "./Controllers/TasksController.js";
-import ImagesController from "./Controllers/ImagesController.js";
 
 class App {
   tasksController = new TasksController();
-  imagesController = new ImagesController();
+  quotesController = new QuotesController();
 }
 
 window["app"] = new App();
