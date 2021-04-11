@@ -1,9 +1,9 @@
 import QuotesController from "./Controllers/QuotesController.js";
-import TasksController from "./Controllers/TasksController.js";
+import ToDoController from "./Controllers/ToDoController.js";
 
 class App {
   quotesController = new QuotesController();
-  tasksController = new TasksController();
+  todoController = new ToDoController();
 }
 
 window["app"] = new App();

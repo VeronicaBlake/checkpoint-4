@@ -1,4 +1,4 @@
-import Task from "./Models/Task.js"
+import Task from "./Models/ToDo.js"
 import Quote from "./Models/Quote.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
@@ -6,8 +6,8 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
   /** @type {Quote} */
   quotes = null
-  /** @type {Task[]} */
-  task = []
+  /** @type {ToDo[]} */
+  todo = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {

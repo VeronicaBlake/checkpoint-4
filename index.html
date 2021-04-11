@@ -29,17 +29,17 @@
 
             <div class = "row m-4" id="quote"></div>
 
-            <div id = "todoList" class="col-md-4">
+            <div class="col-md-4">
                 <div class="list-card shadow bg-white rounded">
                 <div class="text-center p-2 d-flex justify-content-between">
                     <h3>To Do: </h3><span> counter </span>
                 </div>
                 <div class="p-3">
                     <ul>
-                    <div>Task names go here</div> 
+                    <div id = "todoList"></div> 
                   </ul>
                 </div>
-                <form class="d-flex p-2" onsubmit="app.tasksController.addTask('${this.id}')">
+                <form class="d-flex p-2" onsubmit="app.todoController.addTodo('${this.id}')">
                     <input type="text" name="name" id="name" class="form-control" placeholder="Task" aria-describedby="helpId">
                     <button type="submit" class="btn btn-success" title='add Task'><i class="fas fa-plus"></i></button>
                 </form>
