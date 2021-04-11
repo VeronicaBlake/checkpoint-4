@@ -8,7 +8,7 @@ function _draw() {
 export default class QuotesController {
   constructor() {
     ProxyState.on('quotes', _draw);
-    this.getQuote
+    this.getQuote()
   }
 
   async getQuote() {

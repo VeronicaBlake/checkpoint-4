@@ -2,8 +2,8 @@ import QuotesController from "./Controllers/QuotesController.js";
 import TasksController from "./Controllers/TasksController.js";
 
 class App {
-  tasksController = new TasksController();
   quotesController = new QuotesController();
+  tasksController = new TasksController();
 }
 
 window["app"] = new App();
