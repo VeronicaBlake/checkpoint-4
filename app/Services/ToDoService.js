@@ -15,8 +15,8 @@ class ToDoService {
   }
 
   async completed (bool, id){
-    ProxyState.todos.find(todo => id === todo.id).checked = bool
-    await sandbox.put(id, {checked: todo.checked})
+    ProxyState.todos.find(todo => id === todo.id).completed = bool
+    await sandbox.put(id, {completed: todo.completed})
     ProxyState.todo = ProxyState.todo
   }
 

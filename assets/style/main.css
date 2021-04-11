@@ -36,6 +36,15 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.hidden {
+  color: transparent;
+  transition: all 1ms;
+}
+
+.quoteBody:hover + .hidden {
+  color:black;
+}
+
 *,
 *::before,
 *::after {

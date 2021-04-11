@@ -4,7 +4,7 @@ import { todoService } from "../Services/ToDoService.js";
 
 //Private
 function _drawTodo() {
-    document.getElementById('todoList').innerHTML = ProxyState.todo.Template
+    document.getElementById('todo').innerHTML = ProxyState.todo.Template
 }
 
 
