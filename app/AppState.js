@@ -11,6 +11,8 @@ class AppState extends EventEmitter {
   todo = []
   /** @type {Image} */
   images = null
+  /** @type {Weather} */
+  weather = null
 }
 
 export const ProxyState = new Proxy(new AppState(), {
