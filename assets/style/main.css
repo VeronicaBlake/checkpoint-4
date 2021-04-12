@@ -42,7 +42,7 @@
 }
 
 .quoteBody:hover + .hidden {
-  color:black;
+  color:white;
 }
 
 *,
