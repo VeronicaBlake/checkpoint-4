@@ -15,3 +15,7 @@ export const todoApi = axios.create({
   timeout: 8000
 })
 
+export const imagesApi = axios.create({
+  baseURL: 'https://bcw-sandbox.herokuapp.com/api/images',
+  timeout: 8000
+})

@@ -27,7 +27,7 @@ class ToDoService {
   }
 
   async deleteTodo(id) {
-    await todoApi.delete('' + id)
+    await sandbox.delete('' / id)
     ProxyState.todo = ProxyState.todo.filter(t => t.id != id)
   }
 

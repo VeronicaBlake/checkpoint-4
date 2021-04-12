@@ -29,6 +29,15 @@ export default class ToDoController {
             console.error(error)
         }
     }
+
+    async deleteTodo() {
+        try {
+            await todoService.deleteTodo()
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
     async addTodo() {
         try {
             window.event.preventDefault()

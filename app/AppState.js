@@ -1,13 +1,16 @@
-import Task from "./Models/ToDo.js"
+import Todo from "./Models/ToDo.js"
 import Quote from "./Models/Quote.js"
+import Image from "./Models/Images.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
   /** @type {Quote} */
   quotes = null
-  /** @type {ToDo[]} */
+  /** @type {Todo[]} */
   todo = []
+  /** @type {Image} */
+  images = null
 }
 
 export const ProxyState = new Proxy(new AppState(), {
