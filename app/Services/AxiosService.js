@@ -20,7 +20,7 @@ export const imagesApi = axios.create({
   timeout: 10000
 })
 
-export const weatherApi = axios.create({
-  baseURL: 'https://bcw-sandbox.herokuapp.com/api/weather',
-  timeout: 10000
-})
+// export const weatherApi = axios.create({
+//   baseURL: 'https://bcw-sandbox.herokuapp.com/api/weather',
+//   timeout: 10000
+// })
