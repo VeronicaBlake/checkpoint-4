@@ -1,6 +1,6 @@
 import Todo from "./Models/ToDo.js"
 import Quote from "./Models/Quote.js"
-import Image from "./Models/Images.js"
+import Image from "./Models/Image.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 

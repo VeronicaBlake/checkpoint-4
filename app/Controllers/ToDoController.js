@@ -30,9 +30,9 @@ export default class ToDoController {
         }
     }
 
-    async deleteTodo() {
+    async deleteTodo(id) {
         try {
-            await todoService.deleteTodo()
+            await todoService.deleteTodo(id)
         } catch (error) {
             console.error(error)
         }
